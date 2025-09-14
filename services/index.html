@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - RelaxAtSume | Premium Wellness & Relaxation Treatments</title>
+    <meta name="description" content="Discover our comprehensive range of wellness services including therapeutic massage, luxury spa treatments, wellness coaching, and aromatherapy sessions in Toronto, Canada.">
+    <meta name="keywords" content="massage therapy, spa treatments, wellness coaching, aromatherapy, relaxation services, therapeutic massage, luxury spa, wellness center, Toronto">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services - RelaxAtSume Premium Wellness Treatments">
+    <meta property="og:description" content="Explore our comprehensive wellness services including massage therapy, spa treatments, and wellness coaching in Toronto.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://relaxatsume.com/services/">
+    <meta property="og:image" content="https://relaxatsume.com/images/services/spa-treatments-overview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://relaxatsume.com/services/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/logo/apple-touch-icon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Wellness and Spa Services",
+        "provider": {
+            "@type": "HealthAndBeautyBusiness",
+            "name": "RelaxAtSume",
+            "url": "https://relaxatsume.com",
+            "telephone": "+1-416-555-0123",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Wellness Avenue",
+                "addressLocality": "Toronto",
+                "addressRegion": "ON",
+                "postalCode": "M5V 3A8",
+                "addressCountry": "CA"
+            }
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Wellness Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Therapeutic Massage",
+                        "description": "Professional massage therapy for stress relief and pain management"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Luxury Spa Treatments",
+                        "description": "Premium spa treatments including facials and body wraps"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <img src="../images/logo/relaxatsume-logo.png" alt="RelaxAtSume Logo" class="logo">
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about/index.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../portfolio/index.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../blog/index.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contacts/index.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="javascript:void(0)" class="btn btn-primary" onclick="openCallbackModal()">Book Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Our Services</h1>
+                <p class="page-subtitle">Discover our comprehensive range of wellness treatments designed to restore balance and enhance your wellbeing</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Services</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Filter -->
+    <section class="services-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Services</option>
+                        <option value="massage">Therapeutic Massage</option>
+                        <option value="spa">Luxury Spa Treatments</option>
+                        <option value="wellness">Wellness Coaching</option>
+                        <option value="aromatherapy">Aromatherapy Sessions</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range:</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="under-80">Under $80</option>
+                        <option value="80-120">$80 - $120</option>
+                        <option value="120-150">$120 - $150</option>
+                        <option value="over-150">Over $150</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="duration-filter">Duration:</label>
+                    <select id="duration-filter" class="filter-select">
+                        <option value="all">All Durations</option>
+                        <option value="45">45 minutes</option>
+                        <option value="60">60 minutes</option>
+                        <option value="90">90 minutes</option>
+                        <option value="120">120 minutes</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort-filter">Sort By:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="duration">Duration</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-results">
+                <span id="results-count">12 services found</span>
+                <button class="btn btn-secondary btn-small" onclick="resetFilters()">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-catalog">
+        <div class="container">
+            <div class="services-grid" id="services-grid">
+                <!-- Therapeutic Massage Services -->
+                <div class="service-item" data-category="massage" data-price="80" data-duration="60" data-popularity="5">
+                    <div class="service-image">
+                        <img src="../images/services/swedish-massage.webp" alt="Swedish Massage" class="service-img">
+                        <div class="service-badge">Most Popular</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Swedish Massage</h3>
+                        <p class="service-description">A classic full-body massage using long strokes, kneading, and circular movements to promote relaxation and improve circulation. Perfect for stress relief and general wellness.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $80</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('swedish-massage')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('swedish-massage')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="massage" data-price="95" data-duration="60" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/deep-tissue-massage.webp" alt="Deep Tissue Massage" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Deep Tissue Massage</h3>
+                        <p class="service-description">Targeted massage therapy focusing on deeper layers of muscle and connective tissue. Ideal for chronic pain, muscle tension, and injury recovery.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $95</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('deep-tissue-massage')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('deep-tissue-massage')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="massage" data-price="120" data-duration="90" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/hot-stone-massage.webp" alt="Hot Stone Massage" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Hot Stone Massage</h3>
+                        <p class="service-description">Heated stones are placed on key points of the body and used in massage to provide deep muscle relaxation and stress relief. A luxurious and therapeutic experience.</p>
+                        <div class="service-details">
+                            <span class="service-duration">90 minutes</span>
+                            <span class="service-price">From $120</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('hot-stone-massage')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('hot-stone-massage')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="massage" data-price="85" data-duration="60" data-popularity="3">
+                    <div class="service-image">
+                        <img src="../images/services/prenatal-massage.webp" alt="Prenatal Massage" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Prenatal Massage</h3>
+                        <p class="service-description">Specialized massage therapy designed for expectant mothers to relieve pregnancy-related discomfort, reduce stress, and promote overall wellbeing during pregnancy.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $85</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('prenatal-massage')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('prenatal-massage')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Luxury Spa Treatments -->
+                <div class="service-item" data-category="spa" data-price="90" data-duration="60" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/luxury-facial.jpg" alt="Luxury Facial Treatment" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Luxury Facial Treatment</h3>
+                        <p class="service-description">A comprehensive facial treatment including cleansing, exfoliation, extraction, massage, and mask application. Customized to your skin type and concerns.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $90</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('luxury-facial')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('luxury-facial')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="spa" data-price="130" data-duration="90" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/body-wrap-treatment.webp" alt="Body Wrap Treatment" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Detoxifying Body Wrap</h3>
+                        <p class="service-description">A full-body treatment using mineral-rich mud or seaweed wraps to detoxify, hydrate, and firm the skin. Includes exfoliation and moisturizing massage.</p>
+                        <div class="service-details">
+                            <span class="service-duration">90 minutes</span>
+                            <span class="service-price">From $130</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('body-wrap')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('body-wrap')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="spa" data-price="75" data-duration="45" data-popularity="3">
+                    <div class="service-image">
+                        <img src="../images/services/body-exfoliation.jpg" alt="Body Exfoliation Treatment" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Body Exfoliation Treatment</h3>
+                        <p class="service-description">A refreshing body scrub treatment using natural exfoliants to remove dead skin cells, improve circulation, and leave your skin soft and glowing.</p>
+                        <div class="service-details">
+                            <span class="service-duration">45 minutes</span>
+                            <span class="service-price">From $75</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('body-exfoliation')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('body-exfoliation')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="spa" data-price="150" data-duration="120" data-popularity="5">
+                    <div class="service-image">
+                        <img src="../images/services/anti-aging-treatment.png" alt="Anti-Aging Treatment" class="service-img">
+                        <div class="service-badge">Premium</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Anti-Aging Treatment</h3>
+                        <p class="service-description">Advanced facial and body treatment using cutting-edge techniques and premium products to reduce signs of aging and restore youthful radiance.</p>
+                        <div class="service-details">
+                            <span class="service-duration">120 minutes</span>
+                            <span class="service-price">From $150</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('anti-aging')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('anti-aging')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wellness Coaching Services -->
+                <div class="service-item" data-category="wellness" data-price="60" data-duration="45" data-popularity="3">
+                    <div class="service-image">
+                        <img src="../images/services/wellness-consultation.jpg" alt="Wellness Consultation" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Wellness Consultation</h3>
+                        <p class="service-description">A comprehensive assessment of your current health and lifestyle to create a personalized wellness plan. Includes goal setting and action planning.</p>
+                        <div class="service-details">
+                            <span class="service-duration">45 minutes</span>
+                            <span class="service-price">From $60</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('wellness-consultation')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('wellness-consultation')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="wellness" data-price="100" data-duration="60" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/stress-management.jpg" alt="Stress Management Coaching" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Stress Management Coaching</h3>
+                        <p class="service-description">Learn effective techniques to manage stress, improve work-life balance, and develop healthy coping strategies for a more peaceful and productive life.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $100</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('stress-management')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('stress-management')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Aromatherapy Services -->
+                <div class="service-item" data-category="aromatherapy" data-price="70" data-duration="45" data-popularity="3">
+                    <div class="service-image">
+                        <img src="../images/services/aromatherapy-session.jpg" alt="Aromatherapy Session" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Aromatherapy Session</h3>
+                        <p class="service-description">Experience the healing power of essential oils through inhalation, topical application, and massage. Customized blends for your specific needs and preferences.</p>
+                        <div class="service-details">
+                            <span class="service-duration">45 minutes</span>
+                            <span class="service-price">From $70</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('aromatherapy-session')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('aromatherapy-session')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-item" data-category="aromatherapy" data-price="95" data-duration="60" data-popularity="4">
+                    <div class="service-image">
+                        <img src="../images/services/essential-oil-massage.jpg" alt="Essential Oil Massage" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Essential Oil Massage</h3>
+                        <p class="service-description">Combines the therapeutic benefits of massage with the healing properties of essential oils. Choose from our selection of premium essential oil blends.</p>
+                        <div class="service-details">
+                            <span class="service-duration">60 minutes</span>
+                            <span class="service-price">From $95</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="javascript:void(0)" class="btn btn-primary" onclick="bookService('essential-oil-massage')">Book Now</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary" onclick="learnMore('essential-oil-massage')">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Calculator Section -->
+    <section class="calculator-section">
+        <div class="container calculator-section-container">
+            <div class="section-header">
+                <h2 class="section-title">Calculate Your Service Price</h2>
+                <p class="section-subtitle">Get an instant quote for our services with our interactive price calculator</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="service-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Wellness Packages</h2>
+                <p class="section-subtitle">Save more with our specially designed wellness packages</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Starter Package</h3>
+                        <div class="package-price">$200</div>
+                        <p class="package-description">Perfect for first-time visitors</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>1 Swedish Massage (60 min)</li>
+                            <li>1 Wellness Consultation (45 min)</li>
+                            <li>Complimentary aromatherapy</li>
+                            <li>10% off next visit</li>
+                        </ul>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="bookPackage('starter')">Book Package</a>
+                    </div>
+                </div>
+                
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3 class="package-name">Relaxation Package</h3>
+                        <div class="package-price">$350</div>
+                        <p class="package-description">Complete relaxation experience</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>1 Hot Stone Massage (90 min)</li>
+                            <li>1 Luxury Facial (60 min)</li>
+                            <li>1 Aromatherapy Session (45 min)</li>
+                            <li>Complimentary refreshments</li>
+                            <li>15% off next visit</li>
+                        </ul>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="bookPackage('relaxation')">Book Package</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Premium Package</h3>
+                        <div class="package-price">$500</div>
+                        <p class="package-description">Ultimate wellness experience</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-features">
+                            <li>1 Anti-Aging Treatment (120 min)</li>
+                            <li>1 Deep Tissue Massage (60 min)</li>
+                            <li>1 Stress Management Session (60 min)</li>
+                            <li>1 Detoxifying Body Wrap (90 min)</li>
+                            <li>Complimentary wellness assessment</li>
+                            <li>20% off next visit</li>
+                        </ul>
+                        <a href="javascript:void(0)" class="btn btn-primary" onclick="bookPackage('premium')">Book Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Experience Our Services?</h2>
+                <p class="cta-subtitle">Book your appointment today and discover the RelaxAtSume difference</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0)" class="btn btn-primary btn-large" onclick="openCallbackModal()">Book Now</a>
+                    <a href="../contacts/index.html" class="btn btn-secondary btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo/relaxatsume-logo-white.png" alt="RelaxAtSume Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">Your premier destination for relaxation and wellness in Canada. Experience the difference that professional care and personalized attention can make.</p>
+                    <div class="social-links">
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/twitter-icon.png" alt="Twitter">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="index.html">Our Services</a></li>
+                        <li><a href="../portfolio/index.html">Portfolio</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../contacts/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html?category=massage">Therapeutic Massage</a></li>
+                        <li><a href="index.html?category=spa">Spa Treatments</a></li>
+                        <li><a href="index.html?category=wellness">Wellness Coaching</a></li>
+                        <li><a href="index.html?category=aromatherapy">Aromatherapy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><strong>Address:</strong><br>123 Wellness Avenue<br>Toronto, ON M5V 3A8</p>
+                        <p><strong>Phone:</strong> +1-416-555-0123</p>
+                        <p><strong>Email:</strong> info@relaxatsume.com</p>
+                        <p><strong>Hours:</strong><br>Mon-Fri: 9:00 AM - 8:00 PM<br>Sat: 10:00 AM - 6:00 PM<br>Sun: 11:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 RelaxAtSume. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="../legal/privacy/index.html">Privacy Policy</a>
+                        <a href="../legal/terms/index.html">Terms of Service</a>
+                        <a href="../legal/cookies/index.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeCallbackModal()">&times;</span>
+            <h3 class="modal-title">Request a Callback</h3>
+            <form class="modal-form" id="callback-form">
+                <div class="form-group">
+                    <input type="text" id="callback-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="callback-phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="callback-service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="massage">Therapeutic Massage</option>
+                        <option value="spa">Luxury Spa Treatments</option>
+                        <option value="wellness">Wellness Coaching</option>
+                        <option value="aromatherapy">Aromatherapy Sessions</option>
+                        <option value="consultation">Free Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="callback-message" name="message" placeholder="Preferred time for callback" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">
+            <img src="../images/icons/chat-icon.png" alt="Chat">
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Chat with Us</h4>
+                <span class="chat-close" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message bot-message">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button onclick="sendChatMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../js/main.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/calculator.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+</html>

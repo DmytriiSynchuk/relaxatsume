@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - RelaxAtSume | Wellness Success Stories & Gallery</title>
+    <meta name="description" content="Explore RelaxAtSume's portfolio of wellness transformations, client success stories, and our beautiful spa facilities. See the results of our professional treatments.">
+    <meta name="keywords" content="wellness portfolio, spa gallery, massage results, RelaxAtSume success stories, wellness transformations">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Portfolio - RelaxAtSume Wellness Success Stories">
+    <meta property="og:description" content="Explore our portfolio of wellness transformations and beautiful spa facilities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://relaxatsume.com/portfolio/">
+    <meta property="og:image" content="https://relaxatsume.com/images/portfolio/spa-facilities.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://relaxatsume.com/portfolio/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/logo/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/logo/apple-touch-icon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <img src="../images/logo/relaxatsume-logo.png" alt="RelaxAtSume Logo" class="logo">
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../about/index.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../services/index.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../blog/index.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contacts/index.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="javascript:void(0)" class="btn btn-primary" onclick="openCallbackModal()">Book Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Our Portfolio</h1>
+                <p class="page-subtitle">Discover the transformative power of our wellness services through client success stories and our beautiful facilities</p>
+                <nav class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Portfolio</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Categories -->
+    <section class="portfolio-categories">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="facilities">Our Facilities</button>
+                <button class="category-btn" data-category="treatments">Treatments</button>
+                <button class="category-btn" data-category="team">Our Team</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Facility Images -->
+                <div class="portfolio-item" data-category="facilities">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/spa-reception.webp" alt="Spa Reception Area" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Reception Area</h3>
+                            <p class="portfolio-description">Welcome to our serene reception area designed for immediate relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="facilities">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/massage-room.jpg" alt="Massage Treatment Room" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Massage Room</h3>
+                            <p class="portfolio-description">Professional massage therapy room with premium equipment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="facilities">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/spa-lounge.jpg" alt="Spa Relaxation Lounge" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Relaxation Lounge</h3>
+                            <p class="portfolio-description">Peaceful lounge area for pre and post-treatment relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="facilities">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/aromatherapy-room.jpg" alt="Aromatherapy Treatment Room" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Aromatherapy Room</h3>
+                            <p class="portfolio-description">Specialized room for aromatherapy and essential oil treatments</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Treatment Images -->
+                <div class="portfolio-item" data-category="treatments">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/swedish-massage-treatment.webp" alt="Swedish Massage Treatment" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Swedish Massage</h3>
+                            <p class="portfolio-description">Classic full-body massage for ultimate relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="treatments">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/hot-stone-treatment.webp" alt="Hot Stone Massage Treatment" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Hot Stone Therapy</h3>
+                            <p class="portfolio-description">Heated stones for deep muscle relaxation and stress relief</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="treatments">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/facial-treatment.webp" alt="Luxury Facial Treatment" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Luxury Facial</h3>
+                            <p class="portfolio-description">Comprehensive facial treatment for radiant, healthy skin</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="treatments">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/body-wrap-treatment.webp" alt="Detoxifying Body Wrap" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Body Wrap</h3>
+                            <p class="portfolio-description">Detoxifying body wrap treatment for skin renewal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Photos -->
+                <div class="portfolio-item" data-category="team">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/team-massage-therapist.jpg" alt="Professional Massage Therapist" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Our Therapists</h3>
+                            <p class="portfolio-description">Licensed and certified massage therapists with years of experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="team">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/team-spa-specialist.jpg" alt="Spa Treatment Specialist" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Spa Specialists</h3>
+                            <p class="portfolio-description">Expert spa treatment specialists trained in the latest techniques</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="team">
+                    <div class="portfolio-image">
+                        <img src="../images/portfolio/team-wellness-coach.jpg" alt="Wellness Coach" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Wellness Coaches</h3>
+                            <p class="portfolio-description">Certified wellness coaches helping clients achieve their health goals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Experience Our Services?</h2>
+                <p class="cta-subtitle">Join hundreds of satisfied clients who have transformed their wellness journey with RelaxAtSume</p>
+                <div class="cta-buttons">
+                    <a href="../services/index.html" class="btn btn-primary btn-large">View Services</a>
+                    <a href="javascript:void(0)" class="btn btn-secondary btn-large" onclick="openCallbackModal()">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../images/logo/relaxatsume-logo-white.png" alt="RelaxAtSume Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">Your premier destination for relaxation and wellness in Canada. Experience the difference that professional care and personalized attention can make.</p>
+                    <div class="social-links">
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/twitter-icon.png" alt="Twitter">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="../images/icons/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">About Us</a></li>
+                        <li><a href="../services/index.html">Our Services</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="../contacts/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services/index.html?category=massage">Therapeutic Massage</a></li>
+                        <li><a href="../services/index.html?category=spa">Spa Treatments</a></li>
+                        <li><a href="../services/index.html?category=wellness">Wellness Coaching</a></li>
+                        <li><a href="../services/index.html?category=aromatherapy">Aromatherapy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><strong>Address:</strong><br>123 Wellness Avenue<br>Toronto, ON M5V 3A8</p>
+                        <p><strong>Phone:</strong> +1-416-555-0123</p>
+                        <p><strong>Email:</strong> info@relaxatsume.com</p>
+                        <p><strong>Hours:</strong><br>Mon-Fri: 9:00 AM - 8:00 PM<br>Sat: 10:00 AM - 6:00 PM<br>Sun: 11:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 RelaxAtSume. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="../legal/privacy/index.html">Privacy Policy</a>
+                        <a href="../legal/terms/index.html">Terms of Service</a>
+                        <a href="../legal/cookies/index.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeCallbackModal()">&times;</span>
+            <h3 class="modal-title">Request a Callback</h3>
+            <form class="modal-form" id="callback-form">
+                <div class="form-group">
+                    <input type="text" id="callback-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="callback-phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="callback-service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="massage">Therapeutic Massage</option>
+                        <option value="spa">Luxury Spa Treatments</option>
+                        <option value="wellness">Wellness Coaching</option>
+                        <option value="aromatherapy">Aromatherapy Sessions</option>
+                        <option value="consultation">Free Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="callback-message" name="message" placeholder="Preferred time for callback" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">
+            <img src="../images/icons/chat-icon.png" alt="Chat">
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Chat with Us</h4>
+                <span class="chat-close" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message bot-message">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button onclick="sendChatMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../js/main.js"></script>
+    <script src="../js/forms.js"></script>
+    <script src="../js/portfolio.js"></script>
+</body>
+</html>

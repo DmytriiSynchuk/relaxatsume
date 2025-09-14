@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelaxAtSume - Premium Relaxation & Wellness Services in Canada</title>
+    <meta name="description" content="Discover premium relaxation and wellness services at RelaxAtSume. Professional massage therapy, spa treatments, and holistic wellness solutions in Canada.">
+    <meta name="keywords" content="relaxation, wellness, massage therapy, spa treatments, holistic health, stress relief, Canada, wellness center">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="RelaxAtSume - Premium Relaxation & Wellness Services">
+    <meta property="og:description" content="Professional relaxation and wellness services in Canada. Experience premium massage therapy and spa treatments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://relaxatsume.com">
+    <meta property="og:image" content="https://relaxatsume.com/images/logo/relaxatsume-og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://relaxatsume.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "RelaxAtSume",
+        "description": "Premium relaxation and wellness services in Canada",
+        "url": "https://relaxatsume.com",
+        "telephone": "+1-416-555-0123",
+        "email": "info@relaxatsume.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Wellness Avenue",
+            "addressLocality": "Toronto",
+            "addressRegion": "ON",
+            "postalCode": "M5V 3A8",
+            "addressCountry": "CA"
+        },
+        "openingHours": "Mo-Fr 09:00-20:00,Sa 10:00-18:00,Su 11:00-17:00",
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.6532,
+                "longitude": -79.3832
+            },
+            "geoRadius": "50000"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/logo/relaxatsume-logo.png" alt="RelaxAtSume Logo" class="logo">
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about/index.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services/index.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio/index.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog/index.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts/index.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="javascript:void(0)" class="btn btn-primary" onclick="openCallbackModal()">Book Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Wellbeing with Premium Relaxation Services</h1>
+                <p class="hero-subtitle">Experience the ultimate in relaxation and wellness at RelaxAtSume. Our expert therapists provide personalized treatments designed to restore your mind, body, and spirit.</p>
+                <div class="hero-buttons">
+                    <a href="services/index.html" class="btn btn-primary btn-large">Explore Services</a>
+                    <a href="javascript:void(0)" class="btn btn-secondary btn-large" onclick="openCallbackModal()">Free Consultation</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero/relaxation-spa-treatment.png" alt="Premium relaxation spa treatment" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Discover our comprehensive range of relaxation and wellness treatments designed to meet your unique needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icons/massage-therapy-icon.png" alt="Massage Therapy">
+                    </div>
+                    <h3 class="service-title">Therapeutic Massage</h3>
+                    <p class="service-description">Professional massage therapy to relieve tension, reduce stress, and promote deep relaxation.</p>
+                    <a href="services/index.html?category=massage" class="service-link">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icons/spa-treatments-icon.png" alt="Spa Treatments">
+                    </div>
+                    <h3 class="service-title">Luxury Spa Treatments</h3>
+                    <p class="service-description">Indulge in our premium spa treatments including facials, body wraps, and rejuvenating therapies.</p>
+                    <a href="services/index.html?category=spa" class="service-link">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icons/wellness-coaching-icon.png" alt="Wellness Coaching">
+                    </div>
+                    <h3 class="service-title">Wellness Coaching</h3>
+                    <p class="service-description">Personalized wellness guidance to help you achieve optimal health and life balance.</p>
+                    <a href="services/index.html?category=wellness" class="service-link">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icons/aromatherapy-icon.png" alt="Aromatherapy">
+                    </div>
+                    <h3 class="service-title">Aromatherapy Sessions</h3>
+                    <p class="service-description">Experience the healing power of essential oils in our specialized aromatherapy treatments.</p>
+                    <a href="services/index.html?category=aromatherapy" class="service-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose RelaxAtSume?</h2>
+                <p class="section-subtitle">We're committed to providing exceptional wellness experiences that exceed your expectations.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/certified-therapists-icon.png" alt="Certified Therapists">
+                    </div>
+                    <h3 class="feature-title">Certified Professionals</h3>
+                    <p class="feature-description">Our team consists of licensed and certified therapists with extensive training and experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/personalized-care-icon.png" alt="Personalized Care">
+                    </div>
+                    <h3 class="feature-title">Personalized Care</h3>
+                    <p class="feature-description">Every treatment is customized to your specific needs and wellness goals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/premium-facilities-icon.png" alt="Premium Facilities">
+                    </div>
+                    <h3 class="feature-title">Premium Facilities</h3>
+                    <p class="feature-description">State-of-the-art facilities designed for maximum comfort and relaxation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/flexible-scheduling-icon.png" alt="Flexible Scheduling">
+                    </div>
+                    <h3 class="feature-title">Flexible Scheduling</h3>
+                    <p class="feature-description">Convenient appointment times to fit your busy lifestyle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/eco-friendly-icon.png" alt="Eco-Friendly">
+                    </div>
+                    <h3 class="feature-title">Eco-Friendly Products</h3>
+                    <p class="feature-description">We use only natural, organic, and environmentally conscious products.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/icons/satisfaction-guarantee-icon.png" alt="Satisfaction Guarantee">
+                    </div>
+                    <h3 class="feature-title">Satisfaction Guarantee</h3>
+                    <p class="feature-description">Your satisfaction is our priority. We guarantee exceptional service every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Read testimonials from our satisfied clients who have experienced the RelaxAtSume difference.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"The most incredible massage experience I've ever had. The therapist was professional and the atmosphere was so calming. I left feeling completely rejuvenated."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/sarah-johnson.jpg" alt="Sarah Johnson" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Johnson</h4>
+                            <p class="author-title">Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"RelaxAtSume has become my sanctuary. The wellness coaching sessions have transformed my approach to self-care and stress management."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/michael-chen.jpg" alt="Michael Chen" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Michael Chen</h4>
+                            <p class="author-title">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"The aromatherapy session was absolutely divine. The scents were perfectly chosen and the treatment left me feeling peaceful and centered."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/emily-rodriguez.jpg" alt="Emily Rodriguez" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Emily Rodriguez</h4>
+                            <p class="author-title">Teacher</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Professional, clean, and incredibly relaxing. The staff goes above and beyond to ensure your comfort and satisfaction."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/leizel-grace.jpg" alt="Leizel Grace" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Leizel Grace</h4>
+                            <p class="author-title">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"I've been coming here for over a year and every visit is better than the last. The personalized approach makes all the difference."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/lisa-thompson.jpg" alt="Lisa Thompson" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Lisa Thompson</h4>
+                            <p class="author-title">Nurse</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"The spa treatments are luxurious and the environment is so peaceful. It's the perfect escape from the daily grind."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/robert-wilson.jpg" alt="Robert Wilson" class="author-photo">
+                        <div class="author-info">
+                            <h4 class="author-name">Robert Wilson</h4>
+                            <p class="author-title">Accountant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Form -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Ready to Begin Your Wellness Journey?</h2>
+                    <p class="contact-subtitle">Get in touch with us today to schedule your personalized consultation and discover how we can help you achieve optimal relaxation and wellness.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="images/icons/phone-icon.png" alt="Phone">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>+1-416-555-0123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="images/icons/email-icon.png" alt="Email">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>info@relaxatsume.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="images/icons/location-icon.png" alt="Location">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Visit Us</h4>
+                                <p>123 Wellness Avenue<br>Toronto, ON M5V 3A8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="quick-contact-form">
+                        <h3 class="form-title">Request a Consultation</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="massage">Therapeutic Massage</option>
+                                <option value="spa">Luxury Spa Treatments</option>
+                                <option value="wellness">Wellness Coaching</option>
+                                <option value="aromatherapy">Aromatherapy Sessions</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your wellness goals" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="latest-blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Wellness Insights</h2>
+                <p class="section-subtitle">Stay informed with our latest articles on wellness, relaxation techniques, and healthy living.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/stress-relief-techniques.webp" alt="5 Effective Stress Relief Techniques">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Wellness Tips</span>
+                            <span class="blog-date">December 15, 2024</span>
+                        </div>
+                        <h3 class="blog-title">5 Effective Stress Relief Techniques for Busy Professionals</h3>
+                        <p class="blog-excerpt">Discover proven methods to manage stress and maintain balance in your professional life.</p>
+                        <div class="blog-btn">
+                            <a href="blog/stress-relief-techniques/index.html" class="service-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/benefits-of-massage-therapy.webp" alt="Benefits of Regular Massage Therapy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Health Benefits</span>
+                            <span class="blog-date">December 10, 2024</span>
+                        </div>
+                        <h3 class="blog-title">The Science Behind Regular Massage Therapy Benefits</h3>
+                        <p class="blog-excerpt">Learn about the scientific evidence supporting the health benefits of regular massage therapy.</p>
+                        <div class="blog-btn">
+                            <a href="blog/massage-therapy-benefits/index.html" class="service-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog/aromatherapy-essential-oils.webp" alt="Aromatherapy and Essential Oils Guide">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Aromatherapy</span>
+                            <span class="blog-date">December 5, 2024</span>
+                        </div>
+                        <h3 class="blog-title">Complete Guide to Aromatherapy and Essential Oils</h3>
+                        <p class="blog-excerpt">Explore the healing properties of essential oils and how to use them effectively for wellness.</p>
+                        <div class="blog-btn">
+                            <a href="blog/aromatherapy-guide/index.html" class="service-link">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <a href="blog/index.html" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/relaxatsume-logo-white.png" alt="RelaxAtSume Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">Your premier destination for relaxation and wellness in Canada. Experience the difference that professional care and personalized attention can make.</p>
+                    <div class="social-links">
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="images/icons/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="images/icons/instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="images/icons/twitter-icon.png" alt="Twitter">
+                        </a>
+                        <a href="javascript:void(0)" class="social-link">
+                            <img src="images/icons/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about/index.html">About Us</a></li>
+                        <li><a href="services/index.html">Our Services</a></li>
+                        <li><a href="portfolio/index.html">Portfolio</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contacts/index.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/index.html?category=massage">Therapeutic Massage</a></li>
+                        <li><a href="services/index.html?category=spa">Spa Treatments</a></li>
+                        <li><a href="services/index.html?category=wellness">Wellness Coaching</a></li>
+                        <li><a href="services/index.html?category=aromatherapy">Aromatherapy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><strong>Address:</strong><br>123 Wellness Avenue<br>Toronto, ON M5V 3A8</p>
+                        <p><strong>Phone:</strong> +1-416-555-0123</p>
+                        <p><strong>Email:</strong> info@relaxatsume.com</p>
+                        <p><strong>Hours:</strong><br>Mon-Fri: 9:00 AM - 8:00 PM<br>Sat: 10:00 AM - 6:00 PM<br>Sun: 11:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 RelaxAtSume. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="legal/privacy/index.html">Privacy Policy</a>
+                        <a href="legal/terms/index.html">Terms of Service</a>
+                        <a href="legal/cookies/index.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Callback Modal -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeCallbackModal()">&times;</span>
+            <h3 class="modal-title">Request a Callback</h3>
+            <form class="modal-form" id="callback-form">
+                <div class="form-group">
+                    <input type="text" id="callback-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="callback-phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="callback-service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="massage">Therapeutic Massage</option>
+                        <option value="spa">Luxury Spa Treatments</option>
+                        <option value="wellness">Wellness Coaching</option>
+                        <option value="aromatherapy">Aromatherapy Sessions</option>
+                        <option value="consultation">Free Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="callback-message" name="message" placeholder="Preferred time for callback" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Callback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">
+            <img src="images/icons/chat-icon.png" alt="Chat">
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Chat with Us</h4>
+                <span class="chat-close" onclick="toggleChat()">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message bot-message">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button onclick="sendChatMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html>
